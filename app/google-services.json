@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1043504119019",
+    "firebase_url": "https://medibox-4797d.firebaseio.com",
+    "project_id": "medibox-4797d",
+    "storage_bucket": "medibox-4797d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043504119019:android:133b1cbf39446384",
+        "android_client_info": {
+          "package_name": "in.co.medibox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043504119019-670s8rt5p28l550dbsjktuc67n3l687s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN5bar4h6eDIM2qC5aXIq_BU7gGeC_kLU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

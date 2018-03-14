@@ -1,0 +1,146 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loginbackgroundcolor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/loginbackgroundcolor"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="in.co.medibox.activity.Activity_SplashScreen">
+
+
+        <ImageView
+            android:id="@+id/company_logo"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/company_logo"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtFirstName_Reg_User"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittextformatting"
+                android:hint="@string/hintFirstName_Reg_User"
+                android:inputType="text"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/edtLastName_Reg_User"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittextformatting"
+                android:hint="@string/hintLastName_Reg_User"
+                android:inputType="text"
+                android:padding="5dp" />
+
+            <RadioGroup
+                android:id="@+id/rbgGender_Reg_User"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtnMale_Reg_User"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:checked="true"
+                    android:text="@string/GenderMale_Reg_User" />
+
+                <RadioButton
+                    android:id="@+id/rbtnFemale_Reg_User"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/GenderFemale_Reg_User" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/edtDOB_Reg_User"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittextformatting"
+                android:editable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hintDOB_Reg_User"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/edtMobileNum_Reg_User"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittextformatting"
+                android:hint="@string/hintMobileNum_Reg_User"
+                android:inputType="number"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/edtEmail_Reg_User"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittextformatting"
+                android:hint="@string/hintEmail_Reg_User"
+                android:inputType="textEmailAddress"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/edtPassword_Reg_User"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittextformatting"
+                android:hint="@string/hintPassword_Reg_User"
+                android:inputType="textPassword"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/edtConfPassword_Reg_User"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittextformatting"
+                android:hint="@string/hintConfPassword_Reg_User"
+                android:inputType="textPassword"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/btnRegister_Reg_User"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonformatting"
+                android:text="@string/btnNext_Reg_User"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

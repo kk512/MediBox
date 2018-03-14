@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialogchangepass_formatting"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f44336"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtTitle_dialog_user_placeorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Change Password:"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#FFFFCC" />
+
+    <RelativeLayout
+        android:id="@+id/relLayoutDlgRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtNewPassword_Dialog_Changepass"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edtformatting_placeorder"
+            android:gravity="center"
+            android:hint="New Password"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLines="3"
+            android:minLines="3"
+            android:padding="5dp"
+            android:paddingLeft="5dp"
+            android:singleLine="false"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLayoutDlgRow6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtCPass_Dialog_Changepass"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edtformatting_placeorder"
+            android:gravity="center"
+            android:hint="Confirm Password"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:paddingLeft="5dp"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLayoutDlgRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnSave_Dialog_Changepass"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnformatting"
+                android:text="SAVE"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnCancel_Dialog_Changepass"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/btnformatting"
+                android:text="CANCEL"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

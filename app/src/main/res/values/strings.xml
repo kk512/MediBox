@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dawai Order</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Splash Screen -->
+    <string name="txt_medi_ready_SplashScreen">Your Medicine is Ready.</string>
+
+    <!-- Login -->
+    <string name="hintEmail_Login">Email</string>
+    <string name="hintPassword_Login">Password</string>
+    <string name="btnLoginMail_Login">Login</string>
+    <string name="btnLoginFb_Login">Login with Facebook</string>
+    <string name="txtRegister_Login">Register | </string>
+    <string name="txtForgotPassword_Login">Forgot Password</string>
+    <string name="rbtnMedical_Login">Medical Shop</string>
+    <string name="rbtnUser_Login">User</string>
+
+    <!-- Register Medical Shop Page - 1 -->
+
+    <string name="hintFirstName_Reg_MediShop1">First Name</string>
+    <string name="hintLastName_Reg_MediShop1">Last Name</string>
+    <string name="GenderMale_Reg_MediShop1">Male</string>
+    <string name="GenderFemale_Reg_MediShop1">Female</string>
+    <string name="hintDOB_Reg_MediShop1">Birth Date</string>
+    <string name="hintMobileNum_Reg_MediShop1">Mobile Number First</string>
+    <string name="hintMobileNum_Reg_MediShop2">Mobile Number Second</string>
+    <string name="hintEmail_Reg_MediShop1">Email Id</string>
+    <string name="hintPassword_Reg_MediShop1">Password</string>
+    <string name="hintConfPassword_Reg_MediShop1">Confirm Password</string>
+    <string name="btnNext_Reg_MediShop1">Next</string>
+    <string name="hintAddress_Reg_MediShop1">Address</string>
+
+    <!-- Register Medical Shop Page - 2 -->
+
+    <string name="hintShopName_Reg_MediShop2">Shop Name</string>
+    <string name="hintShopAdd_Reg_MediShop2">Shop Address</string>
+    <string name="hintShopRegNo_Reg_MediShop2">Shop Registration No.</string>
+    <string name="txtShopDocs_Reg_MediShop2">Shop Documents</string>
+    <string name="btnRegister_Reg_MediShop2">Register</string>
+    <string name="btnBack_Reg_MediShop2">Back</string>
+
+    <!-- Register User -->
+
+    <string name="hintFirstName_Reg_User">First Name</string>
+    <string name="hintLastName_Reg_User">Last Name</string>
+    <string name="GenderMale_Reg_User">Male</string>
+    <string name="GenderFemale_Reg_User">Female</string>
+    <string name="hintDOB_Reg_User">Birth Date</string>
+    <string name="hintMobileNum_Reg_User">Mobile Number</string>
+    <string name="hintEmail_Reg_User">Email Id</string>
+    <string name="hintPassword_Reg_User">Password</string>
+    <string name="hintConfPassword_Reg_User">Confirm Password</string>
+    <string name="btnNext_Reg_User">Register</string>
+
+    <!-- Forgot Password -->
+    <string name="hintEmail_ForgotPass">Email</string>
+    <string name="hintFirstName_ForgotPass">First Name</string>
+    <string name="hintLastName_ForgotPass">Last Name</string>
+    <string name="btnRecoverPass_ForgotPass">Recover Password</string>
+
+    <!-- Drawer Activiy -->
+
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>New Orders</item>
+        <item>Confirmed Orders</item>
+        <item>Processing Orders</item>
+        <item>Sent Orders</item>
+        <item>Delivered Orders</item>
+        <item>Cancelled Orders</item>
+        <item>Profile</item>
+        <item>Logout</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/shopping80</item>
+        <item>@drawable/shopping102</item>
+        <item>@drawable/clock125</item>
+        <item>@drawable/man251</item>
+        <item>@drawable/package36</item>
+        <item>@drawable/letter</item>
+        <item>@drawable/male80</item>
+        <item>@drawable/power107</item>
+    </array>
+
+    <string-array name="nav_drawer_items_user">
+        <item>Place Order</item>
+        <item>View Orders</item>
+        <item>Profile</item>
+        <item>Laboratory Test</item>
+        <item>Logout</item>
+    </string-array>
+
+    <array name="nav_drawer_icons_users">
+        <item>@drawable/shopping80</item>
+        <item>@drawable/eye110</item>
+        <item>@drawable/male80</item>
+        <item>@drawable/microscope4</item>
+        <item>@drawable/power107</item>
+    </array>
+
+    <!--
+    <array name="classified_icon">
+        <item>@drawable/white_plus</item>
+        <item>@drawable/white_my</item>
+        <item>@drawable/white_interested</item>
+        <item>@drawable/white_all</item>
+       
+    </array>
+    -->
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <!-- End of Drawer -->
+
+
+    <!-- PIC CAPTURE STATIC CODES -->
+    <string name="takepic">Camera</string>
+    <string name="opengallery">Gallery</string>
+    <string name="pickgallery">Gallery</string>
+
+    <!-- Web Services -->
+    <!-- <string name="baseUrl_webservice">http://192.168.43.240/oms/php/</string> -->
+
+
+    <!-- <string name="baseUrl_webservice">http://www.omsservice.bugs3.com/php/</string> -->
+
+
+    <!-- <string name="baseUrl_webservice">http://www.omssystem.netau.net/php/</string> -->
+
+    <string name="baseUrl_webservice">http://www.dawaiorder.com/</string>
+
+ <!--  <string name="baseUrl_webservice">http://192.168.1.225:8080/dawai_order/</string>-->
+
+    <string-array name="timeslot_arry_all">
+        <item>Time Slot</item>
+        <item>09 AM - 11 AM</item>
+        <item>11 AM - 01 PM</item>
+        <item>04 PM - 06 PM</item>
+        <item>06 PM - 08 PM</item>
+    </string-array>
+    <string-array name="timeslot_arry_11_01">
+        <item>Time Slot</item>
+        <item>11 AM - 01 PM</item>
+        <item>04 PM - 06 PM</item>
+        <item>06 PM - 08 PM</item>
+    </string-array>
+    <string-array name="timeslot_arry_04_06">
+        <item>Time Slot</item>
+        <item>04 PM - 06 PM</item>
+        <item>06 PM - 08 PM</item>
+    </string-array>
+    <string-array name="timeslot_arry_06_08">
+        <item>Time Slot</item>
+        <item>06 PM - 08 PM</item>
+    </string-array>
+
+    <!-- GCM -->
+    <string name="title_activity_main">Push Notifications</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+
+    <string name="please_enter_email">Please enter valid email</string>
+    <string name="please_enter_valid_password">Please enter valid password</string>
+    <string name="please_connect_internet">No Internet Connection,Please Connected it !</string>
+    <string name="exit_message">Are you sure you want to exit ?</string>
+    <string name="no_records_found">No records found.</string>
+    <string name="place_order">Place Order:</string>
+    <string name="register_medical_shop_txt">Register : Medical Shop</string>
+    <string name="enter_shop_owner_details_txt">Enter Shop Owner Details:-</string>
+    <string name="forgot_pass_txt">Forgot Password</string>
+    <string name="enter_shop_details_txt">Enter Shop Details:-</string>
+</resources>

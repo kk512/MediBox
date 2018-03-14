@@ -1,0 +1,759 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loginbackgroundcolor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/loginbackgroundcolor"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="in.co.medibox.activity.Activity_SplashScreen">
+
+        <ImageView
+            android:id="@+id/company_logo"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:id="@+id/layoutFirstForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/company_logo"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/register_medical_shop_txt"
+                android:textColor="@color/light_black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/enter_shop_owner_details_txt"
+                android:textColor="@color/light_black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <EditText
+                    android:id="@+id/edtFirstName_Reg_MediShop1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/edittextformatting"
+                    android:hint="@string/hintFirstName_Reg_MediShop1"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0"
+                    android:adjustViewBounds="true"
+                    android:onClick="onInfoClicked"
+                    android:src="@drawable/ic_info_outline_black_24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <EditText
+                    android:id="@+id/edtLastName_Reg_MediShop1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/edittextformatting"
+                    android:hint="@string/hintLastName_Reg_MediShop1"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/info_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0"
+                    android:adjustViewBounds="true"
+                    android:onClick="onInfoClicked"
+                    android:src="@drawable/ic_info_outline_black_24dp" />
+
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/rbgGender_Reg_MediShop1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtnMale_Reg_MediShop1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:checked="true"
+                    android:text="@string/GenderMale_Reg_MediShop1" />
+
+                <RadioButton
+                    android:id="@+id/rbtnFemale_Reg_MediShop1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/GenderFemale_Reg_MediShop1" />
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <EditText
+                    android:id="@+id/edtDOB_Reg_MediShop1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/edittextformatting"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/hintDOB_Reg_MediShop1"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/info_eight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0"
+                    android:adjustViewBounds="true"
+                    android:onClick="onInfoClicked"
+                    android:src="@drawable/ic_info_outline_black_24dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <EditText
+                    android:id="@+id/edtMobileNum_Reg_MediShop1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/edittextformatting"
+                    android:hint="@string/hintMobileNum_Reg_MediShop1"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/info_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0"
+                    android:adjustViewBounds="true"
+                    android:onClick="onInfoClicked"
+                    android:src="@drawable/ic_info_outline_black_24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <EditText
+                    android:id="@+id/edtMobileNum_Reg_MediShop2"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/edittextformatting"
+                    android:hint="@string/hintMobileNum_Reg_MediShop2"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/info_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0"
+                    android:adjustViewBounds="true"
+                    android:onClick="onInfoClicked"
+                    android:src="@drawable/ic_info_outline_black_24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <EditText
+                    android:id="@+id/edtAddress_Reg_MediShop1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/edittextformatting"
+                    android:hint="@string/hintAddress_Reg_MediShop1"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/info_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0"
+                    android:adjustViewBounds="true"
+                    android:onClick="onInfoClicked"
+                    android:src="@drawable/ic_info_outline_black_24dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <EditText
+                    android:id="@+id/edtEmail_Reg_MediShop1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/edittextformatting"
+                    android:hint="@string/hintEmail_Reg_MediShop1"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/info_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0"
+                    android:adjustViewBounds="true"
+                    android:onClick="onInfoClicked"
+                    android:src="@drawable/ic_info_outline_black_24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <EditText
+                    android:id="@+id/edtPassword_Reg_MediShop1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/edittextformatting"
+                    android:hint="@string/hintPassword_Reg_MediShop1"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/info_six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0"
+                    android:adjustViewBounds="true"
+                    android:onClick="onInfoClicked"
+                    android:src="@drawable/ic_info_outline_black_24dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <EditText
+                    android:id="@+id/edtConfPassword_Reg_MediShop1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/edittextformatting"
+                    android:hint="@string/hintConfPassword_Reg_MediShop1"
+                    android:inputType="textPassword"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/info_seven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0"
+                    android:adjustViewBounds="true"
+                    android:onClick="onInfoClicked"
+                    android:src="@drawable/ic_info_outline_black_24dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnNext_Reg_MediShop1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonformatting"
+                android:text="@string/btnNext_Reg_MediShop1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/big_font"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutSecondForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/company_logo"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/enter_shop_details_txt"
+                android:textColor="@color/light_black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <EditText
+                    android:id="@+id/edtShopName_Reg_MediShop2"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/edittextformatting"
+                    android:hint="@string/hintShopName_Reg_MediShop2"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/minfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_info_outline_black_24dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <EditText
+                    android:id="@+id/edtShopRegNo_Reg_MediShop2"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/edittextformatting"
+                    android:hint="@string/hintShopRegNo_Reg_MediShop2"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/minfo_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_info_outline_black_24dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <EditText
+                    android:id="@+id/edtShopAdd_Reg_MediShop2"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/edittextformatting"
+                    android:hint="@string/hintShopAdd_Reg_MediShop2"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:lines="3"
+                    android:maxLines="3"
+                    android:minLines="3"
+                    android:padding="5dp"
+                    android:singleLine="false" />
+
+                <ImageView
+                    android:id="@+id/minfo_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_info_outline_black_24dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <EditText
+                    android:id="@+id/edtShopLandmark_Reg_MediShop2"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/edittextformatting"
+                    android:hint="LandMark"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/minfo_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_info_outline_black_24dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <EditText
+                    android:id="@+id/edtShopAddCity_Reg_MediShop2"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/edittextformatting"
+                    android:hint="City"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/minfo_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_info_outline_black_24dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <EditText
+                    android:id="@+id/edtShopAddState_Reg_MediShop2"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/edittextformatting"
+                    android:editable="false"
+                    android:hint="State"
+                    android:imeOptions="actionNext"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/minfo_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_info_outline_black_24dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <EditText
+                    android:id="@+id/edtShopAddZipcode_Reg_MediShop2"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/edittextformatting"
+                    android:hint="Zip Code"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/minfo_six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_info_outline_black_24dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <EditText
+                    android:id="@+id/edtShopPrize_Reg_MediShop2"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="10"
+                    android:background="@drawable/edittextformatting"
+                    android:hint="Prize Rs."
+                    android:inputType="number"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/minfo_seven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="0"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_info_outline_black_24dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/home_delivery_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Will you provide home delivery?"
+                    android:textColor="@color/light_black"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/delivery_yes_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="20dp"
+                        android:checked="false"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="YES" />
+
+                    <RadioButton
+                        android:id="@+id/delivery_no_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="5dp"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="NO" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgShopDoc1_Reg_MediShop2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/add_image" />
+
+                <ImageView
+                    android:id="@+id/imgShopDoc2_Reg_MediShop2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/add_image"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/imgShopDoc3_Reg_MediShop2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/add_image"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btnBack_Reg_MediShop2"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonformatting"
+                    android:text="@string/btnBack_Reg_MediShop2"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnRegister_Reg_MediShop2"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonformatting"
+                    android:text="@string/btnRegister_Reg_MediShop2"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

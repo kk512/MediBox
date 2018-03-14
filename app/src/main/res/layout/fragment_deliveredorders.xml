@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loginbackgroundcolor">
+
+    <ExpandableListView
+        android:id="@+id/expListView_DeliveredOrders"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:divider="@color/loginbackgroundcolor"
+        android:dividerHeight="3dp"></ExpandableListView>
+
+    <TextView
+        android:id="@+id/txtNoRecFound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="No records found."
+        android:textColor="@android:color/darker_gray"
+        android:textSize="25dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

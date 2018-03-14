@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_listrowmsg"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/orderslistrowdescriptionformatting"
+    android:padding="10dp" >
+
+    <!-- Main Layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- Address -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Address:"
+                android:textColor="@android:color/white"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/txtAddress_ConfirmedOrders"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <!-- End of Address -->
+
+
+        <!-- Comments -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Comment:"
+                android:textColor="@android:color/white"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/txtComments_ConfirmedOrders"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <!-- End of Comments -->
+        <!-- Compostion -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Same Comp:"
+                android:textColor="@android:color/white"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/txtCompostion_NewOrders"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@android:color/white"
+                android:textSize="13dp" />
+        </LinearLayout>
+        <!-- End of Composition -->
+
+
+        <!-- Email -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Email Id:"
+                android:textColor="@android:color/white"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/txtEmail_ConfirmedOrders"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@android:color/white"
+                android:textSize="13dp" />
+        </LinearLayout>
+        <!-- End of Email -->
+
+
+
+ <!-- Time Slot -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Time Slot:"
+                android:textColor="@android:color/white"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/txtTimeSlot_NewOrders"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@android:color/white"
+                android:textSize="13dp" />
+        </LinearLayout>
+        <!-- End of Time Slot -->
+
+
+        <!-- Paymode -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Payment Method:"
+                android:textColor="@android:color/white"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/txtPaymode_NewOrders"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@android:color/white"
+                android:textSize="13dp" />
+        </LinearLayout>
+        
+        <!-- Amount -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Amount:"
+                android:textColor="@android:color/white"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/txtAmt_NewOrders"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@android:color/white"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <!-- Prescription -->
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imgPrescription1_NewOrders"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:minWidth="70dp"
+                    android:scaleType="fitXY" 
+                    android:alpha="0.50"/>
+
+                <ImageView
+                    android:id="@+id/imgZoom1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                  
+                    android:src="@drawable/zoom" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imgPrescription2_NewOrders"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:minWidth="70dp"
+                    android:scaleType="fitXY"
+                    android:alpha="0.50" />
+
+                <ImageView
+                     android:id="@+id/imgZoom2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                  
+                    android:src="@drawable/zoom" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imgPrescription3_NewOrders"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:minWidth="70dp"
+                    android:scaleType="fitXY" 
+                    android:alpha="0.50"/>
+
+                <ImageView
+                     android:id="@+id/imgZoom3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+          
+                    android:src="@drawable/zoom" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+         
+            <Button
+                android:id="@+id/btnProcessing_ConfrimedOrders"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:background="@drawable/ordersbtnformatting"
+                android:text="Send in processing"
+                android:textColor="#009688"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- End of Main Layout -->
+
+</RelativeLayout>

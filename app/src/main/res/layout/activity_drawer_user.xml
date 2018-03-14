@@ -1,0 +1,52 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Framelayout to display Fragments -->
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Listview to display slider menu -->
+
+    <LinearLayout
+        android:id="@+id/linearlayoutDrawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/list_background"
+        android:orientation="vertical">
+
+        <in.co.medibox.utils.ImageView_Rounded
+            android:id="@+id/imgProfilePic_Home_User"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:src="@drawable/propic" />
+
+        <TextView
+            android:id="@+id/txtName_Home"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <ListView
+            android:id="@+id/list_slidermenu"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:background="@color/list_background"
+            android:choiceMode="singleChoice"
+            android:divider="@color/list_divider"
+            android:dividerHeight="1dp" />
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

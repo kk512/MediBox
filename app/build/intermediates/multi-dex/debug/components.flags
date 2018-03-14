@@ -1,0 +1,172 @@
+-injars 'G:\MediBox\app\libs\android-query-full.0.26.8.jar'(**.class)
+-injars 'G:\MediBox\app\libs\httpmime-4.1.2.jar'(**.class)
+-injars 'G:\MediBox\app\libs\okhttp-2.4.0.jar'(**.class)
+-injars 'G:\MediBox\app\libs\universal-image-loader-1.9.4.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\6cec3b06c5dfc95313a92c4fc0bb8204\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-11.8.0.aar\a44fb9cd58cbe980da2c4aed6431a465\jars\classes.jar'(**.class)
+-injars 'C:\Program Files\Android\Android Studio\gradle\m2repository\org\apache\httpcomponents\httpclient\4.2.6\httpclient-4.2.6.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-core-11.8.0.aar\8a4c22302ab8dcc4578f188807b44138\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.8.0.aar\06ee73218b5a460733700f3aad35b0d4\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\1443cecc6b0699abeaea3a240b238f8a\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.8.0.aar\cf44a7906d4d126e7a1e20af66da048a\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-cast-11.8.0.aar\4f377787feab86496a8ba41163ce74cb\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-25.2.0.aar\f4087809c358dc6c807e328c3f6fd6a2\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\4652483e16e8463b917f9e710b04fafc\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-ads-11.8.0.aar\0cf4476f5b4e5c614ad63a844e392016\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\255a76cec1461a7f375a32db62f0558f\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.8.0.aar\833075d0e9261d32a33675a24dcb7f71\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-11.8.0.aar\ccd11b7551dffd5572a6a5446d8a947e\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-v4-impl-11.8.0.aar\b9c5e4976e53e9deb9f1dd060f3774f3\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.8.0.aar\fd1382701cad8320b4295d1994526745\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.8.0.aar\9b9d7d38fdef2e9ae38762dd415e0d5c\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\2ac6a04cb3d7b0c5d6dfe6a673713668\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.8.0.aar\709a7c7601c2e3e598a55c6330dcdea7\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.8.0.aar\a6f68730a328ee31c89e15cf18fc8eaf\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-config-11.8.0.aar\c3ebe6efd61c4b275d69fd026a923acf\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-awareness-11.8.0.aar\e827fec15b684737e477f6c43ee6604c\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-games-11.8.0.aar\508887f70ec3996b3eb567fd4d602148\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.8.0.aar\06d8aae5976cdbfa5d3e9f6f5930c0d7\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-fido-11.8.0.aar\c76c597d62c132c00e6ddb1de40e8252\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.8.0.aar\6186002117599c1bfe477fd31c530c61\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-dynamic-links-11.8.0.aar\8407e68b40fe57e0fa43fb13d1a53af7\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-fitness-11.8.0.aar\20a74e76fefa46ccb199290af7511d3d\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.8.0.aar\871e0917619e2df3654d0acf8ff35dd3\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-appindexing-11.8.0.aar\25d1766fbf8e914c1a3977673f4906b4\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-wallet-11.8.0.aar\89bd01651effa3abba1fabacfb1a8a82\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.8.0.aar\021e4d16b07d169bc86c4cd6404f20e4\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.8.0.aar\ea76fc4682b2f00c56f169afdc44fd50\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-instantapps-11.8.0.aar\1769d8baef5e28d6f90bae9a394614d7\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-location-11.8.0.aar\2e1ccea32fe7a4ae08936696670b0915\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-places-11.8.0.aar\0de282d0fddc353b0460c407f1122caf\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.8.0.aar\b418c0b33e6be8e917a0921ba3c43e42\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-nearby-11.8.0.aar\eaa4bb74703814a5c3aed99d9d895a0a\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-panorama-11.8.0.aar\8b1d2c5737d0d6c01cfcdbf9716940e2\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-plus-11.8.0.aar\56b650860d9f1add1c7f2e241f5a7449\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-safetynet-11.8.0.aar\da111a84468277a5b5f34cd221b29dad\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-vision-11.8.0.aar\7eaf390c64b241b565f4d016dc9b75fe\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-11.8.0.aar\8375604d110d68eae22f4c9d496f65dd\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-wearable-11.8.0.aar\68a7bca38bf0888b0381ecce914c1092\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-base-11.8.0.aar\310c217134b13bcaff7732f7a0da35e8\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-crash-11.8.0.aar\4f2e553ae96579ea21f7280e7465d661\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-database-11.8.0.aar\72487e6b7756fe00d89703f80dc23303\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.8.0.aar\60d1adee9aed7a7e11e5fc87ef014944\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.8.0.aar\12b9b8773f61f8c7226dd52ff31dcc5d\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.8.0.aar\110995ecbccdb79c4d6a9504f42f419d\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.8.0.aar\29626a3aa19a6fc812a597d9d91214ca\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.8.0.aar\98aeee9f1f8d4504e79fb42dc2421574\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-storage-11.8.0.aar\2d5e79ab60ffdcf60d5de6e442a28831\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-11.8.0.aar\55a0baceaa7996a96eab6a65e7c110b9\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-common-11.8.0.aar\16bb3ee3d000a16e6362677a9b48fdd5\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.8.0.aar\8bf63201f73a47386a41a5c948fac803\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.8.0.aar\9f0da72564880253ece0c1777d7301b0\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\a0d15d4a2c60ebdef5674ca8f658e093\jars\classes.jar'(**.class)
+-injars 'C:\Program Files\Android\Android Studio\gradle\m2repository\org\apache\httpcomponents\httpcore\4.2.5\httpcore-4.2.5.jar'(**.class)
+-injars 'C:\Program Files\Android\Android Studio\gradle\m2repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar'(**.class)
+-injars 'C:\Program Files\Android\Android Studio\gradle\m2repository\commons-codec\commons-codec\1.6\commons-codec-1.6.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-messaging-license-11.8.0.aar\e589c223ab7746fc4d40f91440454cc2\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\a319650920646293bf483ab84db3394e\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\ec56fcec561e21d34b61c4c8a86d071d\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e8d5d53aedb2abb98b5b761c8309ca1c\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\bc7a81a7505eafaf40564b7d784d2087\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\b76e210f7dcdd3859d9c34d6bc8ff23a\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\1366f92800854d7e5177e59e341a0970\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\49fb6c7247bb2c5796519e6ed41c4f62\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\palette-v7-25.2.0.aar\df2ce0a810f090b3427dc88fc071a868\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\c2c0bae61883c05a43a0968352819c62\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\950286002f5cb41f2f8fda73e3115605\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\69b11c2c8eb4e7b2e4edf82ae59a5ef9\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\26.1.0\814258103cf26a15fcc26ecce35f5b7d24b73f8\support-annotations-26.1.0.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-ads-license-11.8.0.aar\4e085b6e1799852bfe8e66478af13461\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-license-11.8.0.aar\9eda93fe2e5037d62ce7b8ff208b0da8\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-analytics-license-11.8.0.aar\09bb0c5e8d9dd249733283c2b87e3dd0\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-license-11.8.0.aar\292b1661be0240ea6583eec54c4cb3ee\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-license-11.8.0.aar\d0d1e9dcae359f41c912239688ffc343\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-license-11.8.0.aar\115e84d6d7c3bb1ed92d9b23529fa68c\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-license-11.8.0.aar\3ae21feda4f3cd3869ae1ee311f0d1a0\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.8.0.aar\f64f0dd907439edaf7a31cf1f5ff9e53\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-license-11.8.0.aar\efda94264cd338f88cb2e2b346a68713\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-cast-license-11.8.0.aar\7b600ea8a64df70f484501f0a1a0f8eb\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\8fb99237055ab4d51a8217f0b48da554\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-config-license-11.8.0.aar\36d4d18fd0b9e3c35a9205d2cf98a18e\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-awareness-license-11.8.0.aar\51c13395cff41b88296081d0fc13299b\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-crash-license-11.8.0.aar\79631346a0d0d82c15da74e26e3307a1\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-drive-license-11.8.0.aar\808263ba182a05e1f564d76cb3c717d4\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-fido-license-11.8.0.aar\9f41b4c344e312cb0c8da577afa60827\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-11.8.0.aar\c45cb574f4c6e8ff2b76cea7c8557980\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-license-11.8.0.aar\356ef586b3b190a9927d5b6a0d4e6f94\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-database-license-11.8.0.aar\6cfa0e6a0f02b1c58fc25a61a1a2ee70\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-dynamic-links-license-11.8.0.aar\1a2b3b52f1266c9d676ec3c4a7812744\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.8.0.aar\4a4ca5428f3fe8a29260e8d78e99c60b\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-storage-license-11.8.0.aar\e06b08d945afd2a2ac6ca140f2d96b2b\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-license-11.8.0.aar\404e2e6e5a2795e53ae31e69aa82b998\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-common-license-11.8.0.aar\a5ed2f645a1dc6373def090833f8df71\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-fitness-license-11.8.0.aar\bdce6af0f92b568061fc47c1e01cde09\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-games-license-11.8.0.aar\b79e27e4991396d3bc3e4977d557af98\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-gass-license-11.8.0.aar\cf2d268e3df2dffc534aa06257c159e2\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-gcm-license-11.8.0.aar\c71be296fe2e73d4770b32ebc136d950\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-appindexing-license-11.8.0.aar\c7ab7aea014c0ede91811a29f87cd52d\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-identity-license-11.8.0.aar\877fd1138a929ee987b190b8fc8e82ab\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-iid-license-11.8.0.aar\d8a99eab2402ab42ec68de1bc0523cbe\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-instantapps-license-11.8.0.aar\a09d2b0f96ee20a71ab3145ef21c7037\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-location-license-11.8.0.aar\91b067bb689d1aba2ab60afef4363724\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-11.8.0.aar\adccb6a87c3ff9938084ddf2fbdd5cfe\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-analytics-license-11.8.0.aar\79297db371ddee5d94fa73da466c0839\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.8.0.aar\31368aa7ab73d114a4c22720baf63f2f\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-nearby-license-11.8.0.aar\70d80bfd4a52793f2395c9af6f8d2158\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-panorama-license-11.8.0.aar\922e3f8bbff81e3dd576374bc57b4b53\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-places-license-11.8.0.aar\0ded247f8ebc97f10d37a2e0d769a966\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-plus-license-11.8.0.aar\fd30041b726d1e9bef4432c92eb2da8d\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-safetynet-license-11.8.0.aar\191ad7f620bb16fa69329f4846d36664\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-license-11.8.0.aar\815fc6f1ac470e8943eb8b93b8f5d1c5\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-license-11.8.0.aar\bd9e0a90bc4665835272e8fb81a2578a\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-v4-impl-license-11.8.0.aar\b3bdd70f7a6708f4258c4a35539fa80b\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.8.0.aar\8eaa3ff4bdc00e111fc4ce305cd74a29\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-license-11.8.0.aar\31e2ca1e46948f34b41bb8faccd26963\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-vision-license-11.8.0.aar\6e1904de005c55d91d6e45c64a8cbba3\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-wallet-license-11.8.0.aar\6e89730fc79f14baa5150fb8960a4d9a\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\play-services-wearable-license-11.8.0.aar\212038225b5689a186318cb780037fc3\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\10fe8a0e3a0a1623e4e4bb78789146e7\jars\classes.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\modules-2\files-2.1\android.arch.lifecycle\common\1.0.0\e414a4cb28434e25c4f6aa71426eb20cf4874ae9\common-1.0.0.jar'(**.class)
+-injars 'C:\Users\kailash\.gradle\caches\modules-2\files-2.1\android.arch.core\common\1.0.0\a2d487452376193fc8c103dd2b9bd5f2b1b44563\common-1.0.0.jar'(**.class)
+-injars 'G:\MediBox\app\build\intermediates\classes\debug'(**.class)
+-outjars 'G:\MediBox\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'C:\Users\kailash\AppData\Local\Android\Sdk\build-tools\27.0.3\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **
+-dontwarn **
+-printconfiguration 'G:\MediBox\app\build\intermediates\multi-dex\debug\components.flags'
+
+
+# Referenced at G:\MediBox\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:33
+-keep class android.support.multidex.MultiDexApplication {
+    <init>(...);
+}
+
+-keep public class * extends android.app.Instrumentation {
+    <init>();
+}
+
+-keep public class * extends android.app.Application {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.ir.** {
+    <fields>;
+    <methods>;
+}

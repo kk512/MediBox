@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linlay_Main_User_placeOrders"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shoplistrowformatting"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="5">
+
+        <in.co.medibox.utils.ImageView_Rounded
+            android:id="@+id/imgShopLogo_User_PlaceOrder"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:fitsSystemWindows="true"
+            android:maxHeight="60dp"
+            android:maxWidth="60dp"
+            android:src="@drawable/earth" />
+
+        <TextView
+            android:id="@+id/txtShopname_User_PlaceOrder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="4"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:paddingBottom="0dip"
+            android:paddingTop="6dip"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:paddingRight="10dp"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/txtDistance_User_PlaceOrder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:focusable="false"
+            android:gravity="left"
+            android:padding="10dp"
+            android:paddingBottom="0dp"
+            android:paddingTop="6dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/normal_font"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtViewDetails_User_PlaceOrder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="right"
+            android:padding="10dp"
+            android:paddingBottom="0dp"
+            android:paddingTop="6dp"
+            android:text="View"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="@dimen/normal_font"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
