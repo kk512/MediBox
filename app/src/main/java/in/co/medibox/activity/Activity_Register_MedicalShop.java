@@ -383,7 +383,6 @@ public class Activity_Register_MedicalShop extends Activity implements OnClickLi
             case R.id.info_seven:
                 compulsoryFieldMessage();
                 break;
-
             case R.id.info_eight:
                 compulsoryFieldMessage();
                 break;
@@ -731,7 +730,7 @@ public class Activity_Register_MedicalShop extends Activity implements OnClickLi
                 registerParam.add(new BasicNameValuePair("gender", "F"));
             }
 
-            registerParam.add(new BasicNameValuePair("birth_date",mDob.getText().toString()));
+            registerParam.add(new BasicNameValuePair("birth_date", mDob.getText().toString()));
             registerParam.add(new BasicNameValuePair("mobile_no", mMobNum.getText().toString()));
             registerParam.add(new BasicNameValuePair("mobile_no_one", mMobNum1.getText().toString()));
             registerParam.add(new BasicNameValuePair("owner_address", mAddress.getText().toString()));
