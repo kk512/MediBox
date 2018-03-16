@@ -1,6 +1,7 @@
 package in.co.medibox.fragment;
 
 import android.app.AlertDialog;
+import android.app.DatePickerDialog;
 import android.app.Fragment;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -17,16 +18,25 @@ import android.view.View.OnClickListener;
 import android.view.View.OnFocusChangeListener;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Locale;
+
 import in.co.medibox.R;
 import in.co.medibox.gps.GPSTracker;
 import in.co.medibox.service.Service_Handler;
@@ -35,7 +45,7 @@ public class Fragment_Profile extends Fragment {
     private GPSTracker gps;
     private AlertDialog builder;
     private SharedPreferences mMediPref;
-    private EditText mFisrtName,mLastName, mName, mBirthdate, mMobile,mMobileOne, mEmail;
+    private EditText mFisrtName, mLastName, mName, mBirthdate, mMobile, mMobileOne, mEmail;
     private LocationManager mLocationManager;
     private LocationListener mLocationListener;
     private Location mLocation;
@@ -47,12 +57,15 @@ public class Fragment_Profile extends Fragment {
     private EditText mAddress;
     private EditText mCity;
     private EditText mState;
+    private RadioGroup mGender;
+    private RadioButton mMale, mFemale;
     private static String CITY = null;
     private static String STATE = null;
     private static String COUNTRY = null;
     private static String url = "http://maps.googleapis.com/maps/api/geocode/json?address=";
     private Button mChangePass;
     private EditText mPassTxt;
+    private Calendar myCalendar;
 
     public Fragment_Profile() {
     }
@@ -63,6 +76,8 @@ public class Fragment_Profile extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_profile, container, false);
         // Initializing SHared Preferences
         mMediPref = getActivity().getSharedPreferences("MEDIAPP", Context.MODE_PRIVATE);
+        myCalendar = Calendar.getInstance();
+
         mFisrtName = (EditText) rootView.findViewById(R.id.edtName_fisrtName);
         mLastName = (EditText) rootView.findViewById(R.id.edtName_lastName);
         mName = (EditText) rootView.findViewById(R.id.edtName_Profile);
@@ -75,6 +90,11 @@ public class Fragment_Profile extends Fragment {
         mLocation_Img = (ImageView) rootView.findViewById(R.id.imgLocation_Profile);
         mLocation_txt = (TextView) rootView.findViewById(R.id.txtLocation_Profile);
         mChangePass = (Button) rootView.findViewById(R.id.btnChangePass_Profile);
+        mGender = (RadioGroup) rootView.findViewById(R.id.rbgGender_Profile);
+        mMale = (RadioButton) rootView.findViewById(R.id.rbtnMale);
+        mFemale = (RadioButton) rootView.findViewById(R.id.rbtnFemale);
+        mBirthdate = (EditText) rootView.findViewById(R.id.edtDob_Profile);
+
 
         mChangePass.setOnClickListener(new OnClickListener() {
             @Override
@@ -140,13 +160,48 @@ public class Fragment_Profile extends Fragment {
             }
         });
 
-        mSave = (Button) rootView.findViewById(R.id.btnSave_Profile);
-
-        mSave.setOnClickListener(new OnClickListener() {
-
+        mBirthdate.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
+                // Date dialog creation code
+                DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int monthOfYear,
+                                          int dayOfMonth) {
+                        // TODO Auto-generated method stub
+                        myCalendar.set(Calendar.YEAR, year);
+                        myCalendar.set(Calendar.MONTH, monthOfYear);
+                        myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                        updateLabel(mBirthdate);
+                    }
+                };
+
+                // Calling Date Dialog
+                new DatePickerDialog(getActivity(), date, myCalendar
+                        .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
+                        myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+            }
+        });
+
+        mSave = (Button) rootView.findViewById(R.id.btnSave_Profile);
+
+        mSave.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+
+                if (mBirthdate.getText().toString().equalsIgnoreCase("")) {
+                    Toast.makeText(getActivity(),
+                            "Enter birthdate.", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (!mMale.isChecked() && !mFemale.isChecked()) {
+                    Toast.makeText(getActivity(),
+                            "Select gender.", Toast.LENGTH_SHORT).show();
+                    return;
+                }
 
                 if (mName.getText().toString().equalsIgnoreCase("")) {
                     Toast.makeText(getActivity(),
@@ -243,7 +298,7 @@ public class Fragment_Profile extends Fragment {
     private class ProgressTask_Fetch_Profile extends AsyncTask<String, Void, String> {
         String Result = null;
         private ProgressDialog pDialog;
-        String first_name, last_name, address, city, state, email, shopNm, mob,mobOne;
+        String first_name, last_name, address, city, state, email, shopNm, mob, mobOne, gender, dob;
 
         @Override
         protected void onPreExecute() {
@@ -280,7 +335,8 @@ public class Fragment_Profile extends Fragment {
                         mobOne = jsonChildNode.getString("mobile_no_one");
                         email = jsonChildNode.getString("email_id");
                         shopNm = jsonChildNode.getString("shop_name");
-
+                        gender = jsonChildNode.getString("gender");
+                        dob = jsonChildNode.getString("birth_date");
                         address = jsonChildNode.getString("shop_address");
                         state = jsonChildNode.getString("shop_state");
                         city = jsonChildNode.getString("shop_city");
@@ -310,7 +366,24 @@ public class Fragment_Profile extends Fragment {
             mAddress.setText(address);
             mCity.setText(city);
             mState.setText(state);
+
+            if (gender.equalsIgnoreCase("M")) {
+                mMale.setChecked(true);
+                mFemale.setChecked(false);
+            } else {
+                mMale.setChecked(false);
+                mFemale.setChecked(true);
+            }
+
+            mBirthdate.setText(dob);
         }
+    }
+
+    // Method to upadate EditText
+    private void updateLabel(EditText control) {
+        String myFormat = "dd MMM, yyyy"; //In which you need put here
+        SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+        control.setText(sdf.format(myCalendar.getTime()));
     }
 
     // class to update location
@@ -496,6 +569,14 @@ public class Fragment_Profile extends Fragment {
             param.add(new BasicNameValuePair("status", "1"));
             param.add(new BasicNameValuePair("first_name", mFisrtName.getText().toString()));
             param.add(new BasicNameValuePair("last_name", mLastName.getText().toString()));
+
+            if (mMale.isChecked()) {
+                param.add(new BasicNameValuePair("gender", "M"));
+            } else {
+                param.add(new BasicNameValuePair("gender", "F"));
+            }
+
+            param.add(new BasicNameValuePair("birth_date", mBirthdate.getText().toString()));
             param.add(new BasicNameValuePair("shop_name", mName.getText().toString()));
             param.add(new BasicNameValuePair("shop_address", mAddress.getText().toString()));
             param.add(new BasicNameValuePair("shop_city", mCity.getText().toString()));

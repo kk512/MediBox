@@ -47,7 +47,6 @@ public class Fragment_User_Profile extends Fragment {
     private Calendar myCalendar;
     private GPSTracker gps;
     private SharedPreferences mMediPref;
-    /*private TextView mName,mGender,mBirthdate,mMobile,mEmail,mShopNm;*/
     private EditText mName, mLname, mBirthdate, mMobile, mEmail, mShopNm;
     private LocationManager mLocationManager;
     private LocationListener mLocationListener;
@@ -72,14 +71,6 @@ public class Fragment_User_Profile extends Fragment {
         // Initializing SHared Preferences
         mMediPref = getActivity().getSharedPreferences("MEDIAPP", Context.MODE_PRIVATE);
         myCalendar = Calendar.getInstance();
-
-		/*	mName=(TextView) rootView.findViewById(R.id.txtName_Profile);
-        mGender=(TextView) rootView.findViewById(R.id.txtGender_Profile);
-		mBirthdate=(TextView) rootView.findViewById(R.id.txtDob_Profile);
-		mMobile=(TextView) rootView.findViewById(R.id.txtMobile_Profile);
-		mEmail=(TextView) rootView.findViewById(R.id.txtEmail_Profile);
-		mShopNm=(TextView) rootView.findViewById(R.id.txtShopName_Profile);*/
-
         mName = (EditText) rootView.findViewById(R.id.edtName_Profile);
         mLname = (EditText) rootView.findViewById(R.id.edtLName_Profile);
         mBirthdate = (EditText) rootView.findViewById(R.id.edtDob_Profile);
