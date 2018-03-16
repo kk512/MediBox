@@ -21,26 +21,21 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.util.ArrayList;
-
 import in.co.medibox.R;
 import in.co.medibox.gps.GPSTracker;
 import in.co.medibox.service.Service_Handler;
 
-
 public class Fragment_Profile extends Fragment {
-    // GPSTracker class
-    GPSTracker gps;
+    private GPSTracker gps;
     private AlertDialog builder;
     private SharedPreferences mMediPref;
-    private EditText mName, mBirthdate, mMobile, mEmail;
+    private EditText mFisrtName,mLastName, mName, mBirthdate, mMobile,mMobileOne, mEmail;
     private LocationManager mLocationManager;
     private LocationListener mLocationListener;
     private Location mLocation;
@@ -62,19 +57,18 @@ public class Fragment_Profile extends Fragment {
     public Fragment_Profile() {
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         View rootView = inflater.inflate(R.layout.fragment_profile, container, false);
-
         // Initializing SHared Preferences
         mMediPref = getActivity().getSharedPreferences("MEDIAPP", Context.MODE_PRIVATE);
+        mFisrtName = (EditText) rootView.findViewById(R.id.edtName_fisrtName);
+        mLastName = (EditText) rootView.findViewById(R.id.edtName_lastName);
         mName = (EditText) rootView.findViewById(R.id.edtName_Profile);
         mMobile = (EditText) rootView.findViewById(R.id.edtMobile_Profile);
+        mMobileOne = (EditText) rootView.findViewById(R.id.edtMobile_one_Profile);
         mEmail = (EditText) rootView.findViewById(R.id.edtEmail_Profile);
-        //	mShopNm=(EditText) rootView.findViewById(R.id.edtShopName_Profile);
         mCity = (EditText) rootView.findViewById(R.id.edtCity_Profile);
         mState = (EditText) rootView.findViewById(R.id.edtState_Profile);
         mAddress = (EditText) rootView.findViewById(R.id.edtAddress_Profile);
@@ -166,6 +160,18 @@ public class Fragment_Profile extends Fragment {
                     return;
                 }
 
+                if (mMobileOne.getText().toString().equalsIgnoreCase("")) {
+                    Toast.makeText(getActivity(),
+                            "Enter mobile number.", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (mEmail.getText().toString().equalsIgnoreCase("")) {
+                    Toast.makeText(getActivity(),
+                            "Enter Email Id.", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 if (mCity.getText().toString().equalsIgnoreCase("")) {
                     Toast.makeText(getActivity(),
                             "Enter city.", Toast.LENGTH_SHORT).show();
@@ -214,35 +220,30 @@ public class Fragment_Profile extends Fragment {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-
                 Toast.makeText(getActivity(),
                         "Please enter city first.", Toast.LENGTH_SHORT).show();
             }
         });
 
-
         mEmail.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Toast.makeText(getActivity(),
-                        "You cannot change email id.", Toast.LENGTH_SHORT).show();
+               /* Toast.makeText(getActivity(),
+                        "You cannot change email id.", Toast.LENGTH_SHORT).show();*/
             }
         });
-
 
         gps = new GPSTracker(getActivity());
         new ProgressTask_Fetch_Profile().execute();
         return rootView;
-
-
     }
 
     // class to fetch reservation
     private class ProgressTask_Fetch_Profile extends AsyncTask<String, Void, String> {
         String Result = null;
         private ProgressDialog pDialog;
-        String first_name, last_name, address, city, state, email, shopNm, mob;
+        String first_name, last_name, address, city, state, email, shopNm, mob,mobOne;
 
         @Override
         protected void onPreExecute() {
@@ -273,7 +274,10 @@ public class Fragment_Profile extends Fragment {
                     JSONArray jsonResponse = new JSONArray(jsonStr);
                     for (int i = 0; i < jsonResponse.length(); i++) {
                         JSONObject jsonChildNode = jsonResponse.getJSONObject(i);
+                        first_name = jsonChildNode.getString("first_name");
+                        last_name = jsonChildNode.getString("last_name");
                         mob = jsonChildNode.getString("mobile_no");
+                        mobOne = jsonChildNode.getString("mobile_no_one");
                         email = jsonChildNode.getString("email_id");
                         shopNm = jsonChildNode.getString("shop_name");
 
@@ -297,9 +301,11 @@ public class Fragment_Profile extends Fragment {
             // Dismiss the progress dialog
             if (pDialog.isShowing())
                 pDialog.dismiss();
-
+            mFisrtName.setText(first_name);
+            mLastName.setText(last_name);
             mName.setText(shopNm);
             mMobile.setText(mob);
+            mMobileOne.setText(mobOne);
             mEmail.setText(email);
             mAddress.setText(address);
             mCity.setText(city);
@@ -488,11 +494,15 @@ public class Fragment_Profile extends Fragment {
                     mMediPref.getString("user_no", "").toString()));
 
             param.add(new BasicNameValuePair("status", "1"));
+            param.add(new BasicNameValuePair("first_name", mFisrtName.getText().toString()));
+            param.add(new BasicNameValuePair("last_name", mLastName.getText().toString()));
             param.add(new BasicNameValuePair("shop_name", mName.getText().toString()));
             param.add(new BasicNameValuePair("shop_address", mAddress.getText().toString()));
             param.add(new BasicNameValuePair("shop_city", mCity.getText().toString()));
             param.add(new BasicNameValuePair("shop_state", mState.getText().toString()));
             param.add(new BasicNameValuePair("mobile_no", mMobile.getText().toString()));
+            param.add(new BasicNameValuePair("mobile_no_one", mMobileOne.getText().toString()));
+            param.add(new BasicNameValuePair("email_id", mEmail.getText().toString()));
 
             String jsonStr = sh.makeServiceCall(getResources().
                             getString(R.string.baseUrl_webservice) + "edit_profile.php",

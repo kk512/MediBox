@@ -12,10 +12,11 @@
 
     <ImageView
         android:id="@+id/company_logo"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="120dp"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
         android:adjustViewBounds="true"
+        android:padding="10dp"
         android:src="@drawable/logo" />
 
 

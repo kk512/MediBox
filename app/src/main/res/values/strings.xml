@@ -24,8 +24,8 @@
     <string name="GenderMale_Reg_MediShop1">Male</string>
     <string name="GenderFemale_Reg_MediShop1">Female</string>
     <string name="hintDOB_Reg_MediShop1">Birth Date</string>
-    <string name="hintMobileNum_Reg_MediShop1">Mobile Number First</string>
-    <string name="hintMobileNum_Reg_MediShop2">Mobile Number Second</string>
+    <string name="hintMobileNum_Reg_MediShop1">First Mobile Number</string>
+    <string name="hintMobileNum_Reg_MediShop2">Second Mobile Number </string>
     <string name="hintEmail_Reg_MediShop1">Email Id</string>
     <string name="hintPassword_Reg_MediShop1">Password</string>
     <string name="hintConfPassword_Reg_MediShop1">Confirm Password</string>
