@@ -436,8 +436,8 @@ public class Activity_Register_MedicalShop extends Activity implements OnClickLi
         ok.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
+                shopRangeValue = Integer.parseInt(mRangeValue.getText().toString().trim());
                 if (mRangeValue.getText().toString().equalsIgnoreCase("")) {
-                    shopRangeValue = Integer.parseInt(mRangeValue.getText().toString().trim());
                     Toast.makeText(Activity_Register_MedicalShop.this, "Please provide range of delivery", Toast.LENGTH_SHORT).show();
                     return;
                 }

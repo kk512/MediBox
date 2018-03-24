@@ -1,5 +1,7 @@
 package in.co.medibox.activity;
 
+import android.accounts.Account;
+import android.accounts.AccountManager;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
@@ -7,8 +9,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import org.apache.http.NameValuePair;
@@ -18,13 +21,15 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 import in.co.medibox.R;
 import in.co.medibox.service.Service_Handler;
 import in.co.medibox.utils.Utils;
 
 public class Activity_Forgot_Password extends Activity {
-    private EditText mEmailId;
+    private AutoCompleteTextView mEmailId;
     private Button mRecover;
 
     @Override
@@ -33,7 +38,7 @@ public class Activity_Forgot_Password extends Activity {
         setContentView(R.layout.activity_forgot_pass);
         getActionBar().hide();
 
-        mEmailId = (EditText) findViewById(R.id.edtEmail_ForgotPass);
+        mEmailId = (AutoCompleteTextView) findViewById(R.id.edtEmail_ForgotPass);
         mRecover = (Button) findViewById(R.id.btnRecoverPass_ForgotPass);
         mRecover.setOnClickListener(new OnClickListener() {
             @Override
@@ -51,6 +56,19 @@ public class Activity_Forgot_Password extends Activity {
                 }
             }
         });
+
+        // Check email pattern
+        Account[] accounts = AccountManager.get(this).getAccounts();
+        Set<String> emailSet = new HashSet<String>();
+        for (Account account : accounts) {
+            if (Utils.EMAIL_PATTERN.matcher(account.name).matches()) {
+                emailSet.add(account.name);
+            }
+        }
+
+        mEmailId.setAdapter(new ArrayAdapter<String>(this,
+                android.R.layout.simple_dropdown_item_1line, new ArrayList<String>(emailSet)));
+
 
     }
 
