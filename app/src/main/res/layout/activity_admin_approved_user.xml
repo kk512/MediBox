@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loginbackgroundcolor">
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/company_logo"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Medical Owner Details:-"
+            android:textColor="@color/light_black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/user_firstname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:text="First Name"
+            android:textColor="@color/light_black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/user_lastname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Last Name"
+            android:textColor="@color/light_black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/user_mobileno"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Mobile Number"
+            android:textColor="@color/light_black"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/user_emailid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Email Id"
+            android:textColor="@color/light_black"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <Button
+                android:id="@+id/approved_btn"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="5"
+                android:background="@drawable/dialogformatting"
+                android:padding="5dp"
+                android:text="Approved"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/medium_font" />
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="5"
+                android:background="@drawable/dialogformatting"
+                android:padding="5dp"
+                android:text="Cancel"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/medium_font" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -146,7 +146,6 @@ public class Activity_Register_MedicalShop extends Activity implements OnClickLi
         mCity = (EditText) findViewById(R.id.edtShopAddCity_Reg_MediShop2);
         mState = (EditText) findViewById(R.id.edtShopAddState_Reg_MediShop2);
         mZipCode = (EditText) findViewById(R.id.edtShopAddZipcode_Reg_MediShop2);
-        mPrize = (EditText) findViewById(R.id.edtShopPrize_Reg_MediShop2);
         mDeliveryYes = (RadioButton) findViewById(R.id.delivery_yes_btn);
         mDeliveryNo = (RadioButton) findViewById(R.id.delivery_no_btn);
 
@@ -380,9 +379,9 @@ public class Activity_Register_MedicalShop extends Activity implements OnClickLi
             case R.id.info_six:
                 compulsoryFieldMessage();
                 break;
-            case R.id.info_seven:
+           /* case R.id.info_seven:
                 compulsoryFieldMessage();
-                break;
+                break;*/
             case R.id.info_eight:
                 compulsoryFieldMessage();
                 break;
@@ -745,7 +744,6 @@ public class Activity_Register_MedicalShop extends Activity implements OnClickLi
             registerParam.add(new BasicNameValuePair("shop_state", mState.getText().toString()));
             registerParam.add(new BasicNameValuePair("shop_city", mCity.getText().toString()));
             registerParam.add(new BasicNameValuePair("shop_zipcode", mZipCode.getText().toString()));
-            registerParam.add(new BasicNameValuePair("shop_prize", mPrize.getText().toString()));
             registerParam.add(new BasicNameValuePair("shop_range", String.valueOf(shopRangeValue)));
 
             registerParam.add(new BasicNameValuePair("lat", mLatitude));
@@ -794,7 +792,8 @@ public class Activity_Register_MedicalShop extends Activity implements OnClickLi
              * */
             if (Result != null) {
                 if (Result.equalsIgnoreCase("1")) {
-                    Intent ins = new Intent(getApplicationContext(), Activity_Drawer_MedicalStore.class);
+                  //  Intent ins = new Intent(getApplicationContext(), Activity_Drawer_MedicalStore.class);
+                    Intent ins = new Intent(getApplicationContext(), Activity_Admin_Panel.class);
                     startActivity(ins);
                     finish();
 

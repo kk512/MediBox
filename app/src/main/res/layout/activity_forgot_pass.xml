@@ -60,15 +60,17 @@
             android:padding="5dp"
             android:visibility="gone" />
 
-        <EditText
+
+        <AutoCompleteTextView
             android:id="@+id/edtEmail_ForgotPass"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/edittextformatting"
-            android:hint="@string/hintEmail_ForgotPass"
+            android:hint="@string/hintEmail_Login"
             android:inputType="textEmailAddress"
             android:padding="5dp" />
+
 
         <Button
             android:id="@+id/btnRecoverPass_ForgotPass"

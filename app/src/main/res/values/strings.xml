@@ -137,7 +137,7 @@
 
     <string name="baseUrl_webservice">http://www.dawaiorder.com/</string>
 
- <!--  <string name="baseUrl_webservice">http://192.168.1.225:8080/dawai_order/</string>-->
+    <!--  <string name="baseUrl_webservice">http://192.168.1.225:8080/dawai_order/</string>-->
 
     <string-array name="timeslot_arry_all">
         <item>Time Slot</item>
@@ -192,4 +192,5 @@
     <string name="enter_shop_owner_details_txt">Enter Shop Owner Details:-</string>
     <string name="forgot_pass_txt">Forgot Password</string>
     <string name="enter_shop_details_txt">Enter Shop Details:-</string>
+    <string name="enter_admin_details">Enter Admin Details :-</string>
 </resources>

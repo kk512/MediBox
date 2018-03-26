@@ -587,7 +587,6 @@
                     android:layout_weight="10"
                     android:background="@drawable/edittextformatting"
                     android:hint="Zip Code"
-                    android:imeOptions="actionNext"
                     android:inputType="number"
                     android:maxLength="6"
                     android:padding="5dp" />
@@ -603,39 +602,40 @@
 
             </LinearLayout>
 
+            <!--  <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginTop="10dp"
+                  android:gravity="center"
+                  android:orientation="horizontal"
+                  android:weightSum="10">
+
+
+                  <EditText
+                      android:id="@+id/edtShopPrize_Reg_MediShop2"
+                      android:layout_width="0dp"
+                      android:layout_height="40dp"
+                      android:layout_weight="10"
+                      android:background="@drawable/edittextformatting"
+                      android:hint="Price Rs."
+                      android:inputType="number"
+                      android:padding="5dp" />
+
+                  <ImageView
+                      android:id="@+id/minfo_seven"
+                      android:layout_width="wrap_content"
+                      android:layout_height="30dp"
+                      android:layout_weight="0"
+                      android:adjustViewBounds="true"
+                      android:src="@drawable/ic_info_outline_black_24dp" />
+
+
+              </LinearLayout>-->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:weightSum="10">
-
-
-                <EditText
-                    android:id="@+id/edtShopPrize_Reg_MediShop2"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="10"
-                    android:background="@drawable/edittextformatting"
-                    android:hint="Prize Rs."
-                    android:inputType="number"
-                    android:padding="5dp" />
-
-                <ImageView
-                    android:id="@+id/minfo_seven"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_weight="0"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/ic_info_outline_black_24dp" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
                 android:gravity="center"
                 android:orientation="vertical">
 
