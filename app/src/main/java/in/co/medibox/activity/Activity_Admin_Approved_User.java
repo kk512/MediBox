@@ -136,11 +136,12 @@ public class Activity_Admin_Approved_User extends Activity {
             // Dismiss the progress dialog
             if (pDialog.isShowing())
                 pDialog.dismiss();
-
-            userFirstName.setText(firstName);
-            userLastName.setText(lastName);
-            userMobile.setText(mobileNo);
-            userEmaiId.setText(emailID);
+            if (firstName != null && lastName != null && mobileNo != null && emailID != null) {
+                userFirstName.setText(firstName);
+                userLastName.setText(lastName);
+                userMobile.setText(mobileNo);
+                userEmaiId.setText(emailID);
+            }
         }
     }
 }

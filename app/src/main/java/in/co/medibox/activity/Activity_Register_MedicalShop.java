@@ -379,10 +379,31 @@ public class Activity_Register_MedicalShop extends Activity implements OnClickLi
             case R.id.info_six:
                 compulsoryFieldMessage();
                 break;
-           /* case R.id.info_seven:
+            case R.id.info_seven:
                 compulsoryFieldMessage();
-                break;*/
+                break;
             case R.id.info_eight:
+                compulsoryFieldMessage();
+                break;
+            case R.id.minfo:
+                compulsoryFieldMessage();
+                break;
+            case R.id.minfo_one:
+                compulsoryFieldMessage();
+                break;
+            case R.id.minfo_two:
+                compulsoryFieldMessage();
+                break;
+            case R.id.minfo_three:
+                compulsoryFieldMessage();
+                break;
+            case R.id.minfo_four:
+                compulsoryFieldMessage();
+                break;
+            case R.id.minfo_five:
+                compulsoryFieldMessage();
+                break;
+            case R.id.minfo_six:
                 compulsoryFieldMessage();
                 break;
         }
@@ -792,7 +813,7 @@ public class Activity_Register_MedicalShop extends Activity implements OnClickLi
              * */
             if (Result != null) {
                 if (Result.equalsIgnoreCase("1")) {
-                  //  Intent ins = new Intent(getApplicationContext(), Activity_Drawer_MedicalStore.class);
+                    //  Intent ins = new Intent(getApplicationContext(), Activity_Drawer_MedicalStore.class);
                     Intent ins = new Intent(getApplicationContext(), Activity_Admin_Panel.class);
                     startActivity(ins);
                     finish();
